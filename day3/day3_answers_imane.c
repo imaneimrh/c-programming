@@ -29,7 +29,7 @@ complex substract(complex x, complex y){
     sub.imaginary = x.imaginary - y.imaginary;
     return sub;
 }
-
+ 
 complex multiply(complex x, complex y){
     complex multiple;
     multiple.real = x.real*y.real - x.imaginary*y.imaginary; 
