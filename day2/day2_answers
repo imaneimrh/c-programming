@@ -1,0 +1,122 @@
+#include <stdio.h> 
+
+
+
+
+ 
+int main() { 
+	    
+	    	//exercice 1
+	    
+	    double n1 = 0.0; 
+	    double n2 = 0.0; 
+		
+	    printf( "Enter 1st number : " ); 
+	    scanf( "%lf", &n1 ); 
+		
+	    printf( "Enter 2nd number : " ); 
+	    scanf( "%lf", &n2 ); 
+
+	    double p = n1 * n2;
+
+	    printf( "%lf  x  %lf  =  %.3lf \n\n", n1,n2,p); 
+
+
+		//exercice 2
+		
+	    int a, b, temp;
+	    printf( "Enter a : " ); 
+	    scanf( "%d", &a ); 
+		
+	    printf( "Enter b : " ); 
+	    scanf( "%d", &b );
+
+	    printf("before permutation, a = %d and b = %d\n\n",a,b);
+
+	    temp = a;
+	    a = b;
+	    b = temp;
+
+	    printf("after permutation, a = %d and b = %d\n\n",a,b);
+
+
+
+		//exercice 3
+		
+		//Suppose C program containing the following statements:
+
+	int   i =  8;
+	int   j =  5;
+	float x =  0.005f;
+	float y = -0.01f;
+	char  c = 'c';
+	char  d = 'd';
+
+	    	//Determine the value of these expressions:
+		(3i - 2j)%(2*d - c)   
+	    /* la formule 3i - 2j n'est pas valide si on met une * de telle maniere (3*i - 2*j)%(2*d - c) on a le resultat 14 qui est un entier.*/
+		2*((i/5) + (4*(j-3))%(i + j - 2)) // entier = 18
+		i <= j //FALSE
+		j != 6 //TRUE
+		c == 99 //FALSE
+		5*(i + j) > 'c' //FALSE
+		(i > 0) && (j < 5) //FALSE
+		(i > 0) || (j < 5) //TRUE
+		(x > y) && (i > 0) || (j < 5) //TRUE
+		(x > y) && (i > 0) && (j < 5) //FALSE
+
+		
+		//exercice 4
+
+	  int a;
+	  int b;
+	  int c;
+
+	  a = 16;
+	  b = 2;
+	  c = 10;
+
+	  c += a > 0 && a <= 15 ? ++a : a/b;
+	  /*
+	   * What about the following expression? :
+	   
+	   // states that if the condition (c+a>0 AND a<=15) is verified then we increment a, else we devide a by b)
+	   
+	   */
+	  a > 30 ? b = 11 : c = 100;
+	  //it states that if the condition (a>30) is verified then change the value of b to 11, else we change the value of c to 100)
+	  
+	  return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
