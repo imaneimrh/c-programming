@@ -32,7 +32,7 @@ complex substract(complex x, complex y){
 
 complex multiply(complex x, complex y){
     complex multiple;
-    multiple.real = x.real*y.real - x.imaginary*y.imaginary;
+    multiple.real = x.real*y.real - x.imaginary*y.imaginary; 
     multiple.imaginary = x.real*y.imaginary + y.real*x.imaginary;
     return multiple;
 }
