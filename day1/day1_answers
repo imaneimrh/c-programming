@@ -1,0 +1,80 @@
+imane@imane-HP:~$ touch Z
+imane@imane-HP:~$ echo Z > z
+imane@imane-HP:~$ cat z
+
+Z
+
+
+imane@imane-HP:~$ touch foo
+imane@imane-HP:~$ cat foo
+imane@imane-HP:~$ touch -a -m -t 202406012342.00 foo.ext
+imane@imane-HP:~$ chmod 455 foo
+imane@imane-HP:~$ ls -l ./foo
+
+-r--r-xr-x 1 imane imane 0 ماي     9 00:45 ./foo
+
+
+imane@imane-HP:~$ mkdir test0
+imane@imane-HP:~$ mkdir test2
+imane@imane-HP:~$ touch test{1,3,4}
+imane@imane-HP:~$ ln -s test0 test6
+imane@imane-HP:~$ ln test3 test5
+imane@imane-HP:~$ printf "1234" > ./test1
+imane@imane-HP:~$ printf "1" > ./test3
+imane@imane-HP:~$ printf "12" > ./test4
+imane@imane-HP:~$ touch -t 06012047 test0
+imane@imane-HP:~$ touch -t 06012146 test1
+imane@imane-HP:~$ touch -t 06012245 test2
+imane@imane-HP:~$ touch -t 06012344 test3
+imane@imane-HP:~$ touch -t 06012343 test4
+imane@imane-HP:~$ touch -t 06012344 test5
+imane@imane-HP:~$ touch -t 06012220 test6
+imane@imane-HP:~$ chmod 715 ./test0
+imane@imane-HP:~$ chmod 714 ./test1
+imane@imane-HP:~$ chmod 504 ./test2
+imane@imane-HP:~$ chmod 404 ./test3
+imane@imane-HP:~$ chmod 641 ./test4
+imane@imane-HP:~$ ls -l 
+
+drwx--xr-x 2 imane imane  4096 يونيو   1  2022  test0
+-rwx--xr-- 1 imane imane     4 يونيو   1  2022  test1
+dr-x---r-- 2 imane imane  4096 يونيو   1  2022  test2
+-r-----r-- 2 imane imane     1 يونيو   1  2022  test3
+-rw-r----x 1 imane imane     2 يونيو   1  2022  test4
+-r-----r-- 2 imane imane     1 يونيو   1  2022  test5
+lrwxrwxrwx 1 imane imane     5 ماي     9 00:51  test6 -> test0
+
+%> ls -l
+total XX
+drwx--xr-x 2 XX XX XX Jun 1 20:47 test0
+-rwx--xr-- 1 XX XX 4 Jun 1 21:46 test1
+dr-x---r-- 2 XX XX XX Jun 1 22:45 test2
+-r-----r-- 2 XX XX 1 Jun 1 23:44 test3
+-rw-r----x 1 XX XX 2 Jun 1 23:43 test4
+-r-----r-- 2 XX XX 1 Jun 1 23:44 test5
+lrwxr-xr-x 1 XX XX 5 Jun 1 22:20 test6 -> test0
+%>
+
+
+imane@imane-HP:~$ ls -t -p -m
+
+imane@imane-HP:~$ find . -type f -name *\.sh | sed s/[.]sh$//
+
+imane@imane-HP:~$ find $PWD \( -type f -or -type d \) -name ".*" -prune -o -print | wc -l
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
